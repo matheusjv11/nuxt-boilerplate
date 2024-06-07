@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  front-boilerplate:
+    build:
+      context: .
+      args:
+        - NODE_BUILD_ENV=dev
+    restart: always
+    ports:
+      - "??:80" # Choose an available port on the testing server

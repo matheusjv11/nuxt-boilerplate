@@ -1,0 +1,20 @@
+// Small tablets and large smartphones (landscape view)
+$smartphones: 600px;
+
+// Small tablets (portrait view)
+$tablets: 800px;
+
+
+// Small devices
+@mixin small-screen {
+    @media (max-width: #{$smartphones}) {
+        @content;
+    }
+ }
+ 
+// Medium devices
+@mixin md-screen {
+    @media (max-width: #{$tablets}) {
+        @content;
+    }
+ }
